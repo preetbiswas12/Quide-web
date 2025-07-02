@@ -67,7 +67,7 @@ const Hero = () => {
             {/* Windows */}
             <Container delay={0.25} className="z-20">
               <div className="flex items-center justify-center mt-6 gap-x-4">
-                <Link href="#" className="flex items-center gap-2 group">
+                <Link href="https://github.com/Preet121106/Quide/releases/download/v1.0.0/Quide-Setup.zip" className="flex items-center gap-2 group">
                   <Button variant="quide" size="lg" className="flex items-center gap-2">
                     <Image
                       src="/icons/win.png"        // ← /public/icons/win.png
@@ -83,7 +83,7 @@ const Hero = () => {
               </div>
             </Container>
 
-            {/* macOS / iOS */}
+            {/* macOS / iOS
             <Container delay={0.25} className="z-20">
               <div className="flex items-center justify-center mt-6 gap-x-4">
                 <Link href="#" className="flex items-center gap-2 group">
@@ -101,7 +101,7 @@ const Hero = () => {
                 </Link>
               </div>
             </Container>
-          </div>
+          </div> */}
 
           {/* dashboard mock‑up */}
           <Container delay={0.3} className="relative">
@@ -126,6 +126,7 @@ const Hero = () => {
           </Container>
         </div>
       </div>
+    </div>
     </div>
   );
 };
