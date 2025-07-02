@@ -17,7 +17,7 @@ import { useEffect, useState } from "react";
 const navItems = [
   { name: "Home", link: "/" },
   { name: "Commands", link: "https://quidedocs.vercel.app/" },
-  { name: "Help", link: "https://quidedocs.vercel.app/helpform" },
+  { name: "Help", link: "https://quidedocs.vercel.app/" },
 ];
 
 function NavbarDemo() {
