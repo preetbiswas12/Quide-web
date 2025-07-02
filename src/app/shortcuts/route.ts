@@ -1,11 +1,12 @@
+// src/app/helpform/route.ts
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+export const dynamic = "force-dynamic";      // make sure it isn’t pruned
 
-export function GET(_req: NextRequest) {
+export function GET() {
   return NextResponse.redirect(
     "https://quidedocs.vercel.app/shortcuts",
-    308
+    307,            // 307 for temporary
   );
 }
-
+// optional, stops Vercel pre‑flight from 404‑ing
 export const HEAD = GET;
