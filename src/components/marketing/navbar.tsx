@@ -14,12 +14,10 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useEffect, useState } from "react";
 
-// ⇢ INTERNAL paths – no more full external URLs
 const navItems = [
   { name: "Home", link: "/" },
-  { name: "Commands", link: "/shortcuts" },   // ← /shortcuts
-  { name: "Docs", link: "https://quidedocs.vercel.app/" },
-  { name: "Help", link: "/helpform" },        // ← /helpform
+  { name: "Commands", link: "https://quidedocs.vercel.app/" },
+  { name: "Help", link: "https://quidedocs.vercel.app/helpform" },
 ];
 
 function NavbarDemo() {
@@ -35,7 +33,7 @@ function NavbarDemo() {
   return (
     <div className="fixed top-0 z-50 w-full">
       <Navbar className={`transition-all duration-300 ease-in-out ${scrolled}`}>
-        {/* ─────────── Desktop Nav ─────────── */}
+        {/* Desktop Nav */}
         <NavBody>
           <NavbarLogo>
             <div className="flex items-center gap-2 text-white">
@@ -44,19 +42,10 @@ function NavbarDemo() {
             </div>
           </NavbarLogo>
 
-          {/* if <NavItems /> already expects plain hrefs, the internal
-             paths above will “just work” */}
           <NavItems items={navItems} />
-
-          <div className="flex items-center gap-4">
-            {/* existing internal page */}
-            <Link href="/sandbox" className="contents">
-              <NavbarButton variant="secondary">How?</NavbarButton>
-            </Link>
-          </div>
         </NavBody>
 
-        {/* ─────────── Mobile Nav ─────────── */}
+        {/* Mobile Nav */}
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo>
@@ -75,31 +64,16 @@ function NavbarDemo() {
             isOpen={isMobileMenuOpen}
             onClose={() => setIsMobileMenuOpen(false)}
           >
-            {navItems.map((item, idx) => {
-              const isHash = item.link.startsWith("#");
-
-              // For hash links keep <a>; otherwise use <Link>
-              return isHash ? (
-                <a
-                  key={`mobile-link-${idx}`}
-                  href={item.link}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-neutral-200 dark:text-white"
-                >
-                  {item.name}
-                </a>
-              ) : (
-                <Link
-                  key={`mobile-link-${idx}`}
-                  href={item.link}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-neutral-200 dark:text-white"
-                >
-                  {item.name}
-                </Link>
-              );
-            })}
-
+            {navItems.map((item, idx) => (
+              <a
+                key={`mobile-link-${idx}`}
+                href={item.link}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-neutral-200 dark:text-white"
+              >
+                {item.name}
+              </a>
+            ))}
             <div className="flex w-full flex-col gap-4 pt-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
