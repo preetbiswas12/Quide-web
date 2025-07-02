@@ -83,7 +83,7 @@ const Hero = () => {
               </div>
             </Container>
 
-            {/* macOS / iOS
+            {/* macOS / iOS */}
             <Container delay={0.25} className="z-20">
               <div className="flex items-center justify-center mt-6 gap-x-4">
                 <Link href="#" className="flex items-center gap-2 group">
@@ -95,13 +95,13 @@ const Hero = () => {
                       height={20}
                       className="inline-block"
                     />
-                    Mac
+                    Under Process
                     <ArrowRightIcon className="size-4 group-hover:translate-x-1 transition-all duration-300" />
                   </Button>
                 </Link>
               </div>
             </Container>
-          </div> */}
+          </div>
 
           {/* dashboard mock‑up */}
           <Container delay={0.3} className="relative">
@@ -126,7 +126,6 @@ const Hero = () => {
           </Container>
         </div>
       </div>
-    </div>
     </div>
   );
 };
