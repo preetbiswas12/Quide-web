@@ -26,7 +26,7 @@ export const FEATURES = [
         image: "/features/SVG.png",
     },
     {
-        title: "Webcam Monitoring",
+        title: "Monitoring",
         description: "Move the overlay window around the window to avoid eye detection and also to avoid detection by screen recording software.",
         icon: EyeOff,
         image: "/images/feature-four.svg",
