@@ -76,7 +76,7 @@ const Hero = () => {
                       height={20}
                       className="inline-block "
                     />
-                    Win
+                    Download for Win
                     <ArrowRightIcon className="size-4 group-hover:translate-x-1 transition-all duration-300" />
                   </Button>
                 </Link>
@@ -110,15 +110,12 @@ const Hero = () => {
               <div className="hidden lg:block absolute -top-1/8 left-1/2 -z-20 bg-blue-600 w-1/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem] animate-image-glow" />
 
               <div className="rounded-lg lg:rounded-[22px] border border-border bg-background">
-                 <video
-                      src="/videos/dashboard.mp4"
+                      <Image
+                      src="/Hero.png"        // ← /public/icons/ios.png
+                      alt="Hero logo"
                       width={1280}
                       height={720}
-                      className="rounded-lg lg:rounded-[20px]"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
+                      className="inline-block"
                     />
                 </div>
             </div>

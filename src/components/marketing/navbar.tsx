@@ -38,11 +38,15 @@ function NavbarDemo() {
           <NavbarLogo>
             <div className="flex items-center gap-2 text-white">
               <img src="/Quide.png" alt="QuIDE logo" className="h-6 w-6" />
-              <span className="text-lg font-bold">QuIDE</span>
+              <span className="text-lg font-bold"></span>
             </div>
           </NavbarLogo>
 
           <NavItems items={navItems} />
+
+           <div className="flex items-center gap-4">
+            <NavbarButton variant="secondary">QuIDE</NavbarButton>
+            </div>
         </NavBody>
 
         {/* Mobile Nav */}
@@ -51,7 +55,7 @@ function NavbarDemo() {
             <NavbarLogo>
               <div className="flex items-center gap-2 text-white">
                 <img src="/Quide.png" alt="QuIDE logo" className="h-6 w-6" />
-                <span className="text-lg font-bold">QuIDE</span>
+                <span className="text-lg font-bold">QUIDE</span>
               </div>
             </NavbarLogo>
             <MobileNavToggle
@@ -80,14 +84,7 @@ function NavbarDemo() {
                 variant="secondary"
                 className="w-full"
               >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Get Started
+                QuIDE
               </NavbarButton>
             </div>
           </MobileNavMenu>

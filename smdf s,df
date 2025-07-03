@@ -1,0 +1,24 @@
+"use client";
+
+import ShiftingCountdown from "../ui/countdown-timer";
+
+const Waitlist = () => {
+  return (
+    <div className="w-full min-h-screen flex flex-col items-center justify-center px-4 py-6 bg-[#09090B] text-white">
+      {/* Heading + subheading */}
+      <div className="text-center mb-1 space-y-0.5">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-display tracking-tight">
+          iOS Release
+        </h1>
+        <p className="text-base sm:text-lg text-gray-300 font-light font-grotesk">
+          Releasing Quide on <span className="font-medium">September 4</span>
+        </p>
+      </div>
+
+      {/* Countdown timer */}
+      <ShiftingCountdown />
+    </div>
+  );
+};
+
+export default Waitlist;

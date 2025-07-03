@@ -47,7 +47,7 @@ const Features = () => {
                                     src={feature.image}
                                     alt={feature.title}
                                     width={500}
-                                    height={500}
+                                    height={200}
                                     className="w-full h-full object-cover"
                                 />
                             </div>

@@ -22,7 +22,7 @@ const applications = [
   },
   {
     id: "002",
-    name: "Hackerrankicon",
+    name: "Hackerrank",
     icon: "/icon/hackerrank.png",
     status: "undetectable",
     statusText: "Undetectable",

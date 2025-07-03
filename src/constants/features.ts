@@ -17,13 +17,13 @@ export const FEATURES = [
         title: "Active Tab Detection",
         description: "Toggle the appliaction window without your cursor losing focus",
         icon: Command,
-        image: "/images/feature-one.svg",
+        image: "/features/SVG3.png",
     },
     {
         title: "Solution Reasoning",
         description: "Each and every solution is explained in detailed by Gemini 2.5 Flash which is reliable for heavy use.",
         icon: Sparkle,
-        image: "/images/feature-three.svg",
+        image: "/features/SVG.png",
     },
     {
         title: "Webcam Monitoring",
@@ -33,8 +33,8 @@ export const FEATURES = [
     },
     {
         title: "Silent Execution",
-        description: ".vbs Keeps the window away from focus even in the Task Manager.",
+        description: ".vbs Keeps the window away from focus even in the Task Manager with the help of Gemini 2,5 flash.",
         icon: BellOff,
-        image: "/images/feature-five.svg",
+        image: "/features/Mask.png",
     }
 ]
