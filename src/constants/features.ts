@@ -35,6 +35,6 @@ export const FEATURES = [
         title: "Silent Execution",
         description: ".vbs Keeps the window away from focus even in the Task Manager with the help of Gemini 2,5 flash.",
         icon: BellOff,
-        image: "/features/Mask.png",
+        image: "/features/mask.png",
     }
 ]
