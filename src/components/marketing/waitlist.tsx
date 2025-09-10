@@ -47,7 +47,7 @@ const Waitlist = () => {
     iOS Release
   </h1>
   <p className="text-base sm:text-lg text-gray-300 font-light font-grotesk">
-    Releasing Quide for iOS on <span className="font-medium">Sept 4, 2025</span>
+    Releasing Quide for iOS on <span className="font-medium">November 4, 2025</span>
   </p>
 </div>
 
